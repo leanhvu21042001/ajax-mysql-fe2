@@ -72,7 +72,7 @@ $categoryList = $categoryModel->getCategories();
 <!-- bootstrap scripts -->
 <script src="./public/js/bootstrap.model.js"></script>
 <!-- <script type="module" src="./public/js/script.js"></script> -->
-<script type="module" src="./public/js/script_05602021.js"></script>
+<script type="module" src="./public/js/script_05062021.js"></script>
 
 <!-- Footer Section Start -->
 <?php include_once('./layouts/Footer.php'); ?>

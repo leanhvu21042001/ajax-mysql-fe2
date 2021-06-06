@@ -1,6 +1,7 @@
 import { fetchFunction } from './module_fetchFunction';
 import { PUBLIC_IMG_URL, API_URL, BASE_URL } from './module_links';
-/**
+
+/** Show products
  * @author le anh vu
  * @param {Position selected} posShow 
  * @param {Object} value 
@@ -157,18 +158,14 @@ function showProducts(posShow, value, len = 999, isAdd = false) {
 // load lần đầu tiên
 fetchFunction(`${API_URL}/get_product_index_first_load.php`, `POST`, {
     user_id: 0
-})
-    .then(response => {
-        return response.json();
-    })
-    .then(result => {
-        showProducts(document.querySelector('#result'), result);
-    });
+}).then(response => {
+    return response.json();
+}).then(result => {
+    showProducts(document.querySelector('#result'), result);
+});
 
-
-
-/**
- * Toggle products by categories
+/** Toggle products by categories
+ * 
  */
 const categoriesCheckbox = document.querySelectorAll('input[name="categories"]');
 let checkedCate = [];
@@ -194,7 +191,6 @@ categoriesCheckbox.forEach(checkbox => checkbox.addEventListener('change', funct
         });
 
 }));
-
 
 // Search products
 const inputSearchChange = document.querySelector('#inputSearchChange');
@@ -228,7 +224,6 @@ inputSearchChange.addEventListener('keyup', e => {
             showListKeywords(result);
         });
 });
-
 function showListKeywords(result) {
     let resultString = ``;
     result.forEach(item => {
@@ -241,7 +236,6 @@ function showListKeywords(result) {
     listNameResult.innerHTML = ''
     listNameResult.innerHTML = resultString
 }
-
 
 // show products on submit form search
 submitSearch.addEventListener('submit', e => {
@@ -264,8 +258,6 @@ function submitFormToShow(searchName) {
         });
 }
 
-
-// load more
 // # Load more products
 const loadMoreProducts = document.querySelector("#load_more-products");
 let page = 1;
