@@ -47,7 +47,7 @@ $productList = $productModel->getProducts();
 
         <div class="row my-4">
             <div class="col-6">
-                <a href="http://localhost/ajax_mysql_fe2/" class="btn btn-primary">BACK HOME</a>
+                <a href="http://localhost/hoc-php-ajax-mysql-front-end-2/" class="btn btn-primary">BACK HOME</a>
             </div>
             <div class="col-6 text-right">
                 <a href="create-product.php" class="btn btn-primary">CREATE PRODUCT</a>

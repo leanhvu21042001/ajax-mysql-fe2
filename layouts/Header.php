@@ -27,14 +27,14 @@ if (isset($_COOKIE['check_login'])) {
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="http://localhost/ajax_mysql_fe2/">[ღ ℒê Ąŋɦ Vũ ღ]</a>
+                <a class="navbar-brand" href="http://localhost/hoc-php-ajax-mysql-front-end-2/">[ღ ℒê Ąŋɦ Vũ ღ]</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="http://localhost/ajax_mysql_fe2/">Home</a>
+                            <a class="nav-link active" aria-current="page" href="http://localhost/hoc-php-ajax-mysql-front-end-2/">Home</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
@@ -48,7 +48,7 @@ if (isset($_COOKIE['check_login'])) {
                                 foreach ($categoryList as $item) {
                                 ?>
                                     <li>
-                                        <a class="dropdown-item" href="http://localhost/ajax_mysql_fe2/pages/category.php?id=<?php echo $item['id']; ?>"><?php echo $item['category_name']; ?></a>
+                                        <a class="dropdown-item" href="http://localhost/hoc-php-ajax-mysql-front-end-2/pages/category.php?id=<?php echo $item['id']; ?>"><?php echo $item['category_name']; ?></a>
                                     </li>
                                 <?php
                                 }
@@ -57,7 +57,7 @@ if (isset($_COOKIE['check_login'])) {
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="http://localhost/ajax_mysql_fe2/pages/manage-products.php">Manage products</a>
+                            <a class="nav-link" aria-current="page" href="http://localhost/hoc-php-ajax-mysql-front-end-2/pages/manage-products.php">Manage products</a>
                         </li>
                     </ul>
 
@@ -74,10 +74,10 @@ if (isset($_COOKIE['check_login'])) {
                         <li class="nav-item">
                             <?php
                             if ($check_login == 'ok') {
-                                echo '<a class="btn btn-danger" aria-current="page" href="http://localhost/ajax_mysql_fe2/pages/logout.php?logout=1">Logout</a>';
+                                echo '<a class="btn btn-danger" aria-current="page" href="http://localhost/hoc-php-ajax-mysql-front-end-2/pages/logout.php?logout=1">Logout</a>';
                                 echo '<span class="px-4 mark text-danger" style="font-weight: 600;">' . $_COOKIE['name'] . '</span>';
                             } else {
-                                echo '<a class="btn btn-success" aria-current="page" href="http://localhost/ajax_mysql_fe2/pages/login.php">Login</a>';
+                                echo '<a class="btn btn-success" aria-current="page" href="http://localhost/hoc-php-ajax-mysql-front-end-2/pages/login.php">Login</a>';
                             }
                             ?>
 

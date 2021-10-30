@@ -15,7 +15,7 @@ $categoryList = $categoryModel->getCategories();
 <section class="container-fluid  mt-5">
     <div class="row">
         <div class="col">
-            <a class="btn btn-primary" href="http://localhost/ajax_mysql_fe2/pages/create-product.php">Create Product</a>
+            <a class="btn btn-primary" href="http://localhost/hoc-php-ajax-mysql-front-end-2/pages/create-product.php">Create Product</a>
         </div>
     </div>
 

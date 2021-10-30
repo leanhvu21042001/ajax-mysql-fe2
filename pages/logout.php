@@ -8,5 +8,5 @@ if (isset($_GET['logout'])) {
     setcookie("username", "", time() - (86400 * 30) - 1, "/");
     setcookie("name", "", time() - (86400 * 30) - 1, "/");
 
-    header('location:http://localhost/ajax_mysql_fe2/index.php');
+    header('location:http://localhost/hoc-php-ajax-mysql-front-end-2/index.php');
 }

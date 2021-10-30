@@ -46,13 +46,13 @@ if (isset($_COOKIE['check_login'])) {
         </div>
 
     </div>
-    <!-- <script src="http://localhost/ajax_mysql_fe2/pages/js/product_detail.js"></script> -->
+    <!-- <script src="http://localhost/hoc-php-ajax-mysql-front-end-2/pages/js/product_detail.js"></script> -->
 
     <script>
         // common links
-        const API_URL = `http://localhost/ajax_mysql_fe2/app/api`;
-        const BASE_URL = `http://localhost/ajax_mysql_fe2`;
-        const PUBLIC_IMG_URL = `http://localhost/ajax_mysql_fe2/public/images`;
+        const API_URL = `http://localhost/hoc-php-ajax-mysql-front-end-2/app/api`;
+        const BASE_URL = `http://localhost/hoc-php-ajax-mysql-front-end-2`;
+        const PUBLIC_IMG_URL = `http://localhost/hoc-php-ajax-mysql-front-end-2/public/images`;
 
         // get id product
         const array_value_href = window.location.href.split('-');

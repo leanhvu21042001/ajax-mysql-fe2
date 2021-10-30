@@ -1,6 +1,6 @@
 
 async function getProduct(productId) {
-  const url = "http://localhost/ajax_mysql_fe2/app/api/productdetail.php";
+  const url = "http://localhost/hoc-php-ajax-mysql-front-end-2/app/api/productdetail.php";
   const data = {
       id: productId
   }

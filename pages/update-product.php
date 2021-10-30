@@ -17,7 +17,7 @@ if(!empty($_POST['productName']) && !empty($_POST['productDescription']) && !emp
     $productPhoto = $_POST['productPhoto'];
     if($productModel->updateProduct($productName, $productDescription, $productPrice, $productPhoto, $id)) {
         $notification = 'Cập nhật sản phẩm thành công';
-        header('Location: http://localhost/ajax_mysql_fe2/pages/manage-products.php');
+        header('Location: http://localhost/hoc-php-ajax-mysql-front-end-2/pages/manage-products.php');
     }
 
 }

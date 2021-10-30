@@ -56,7 +56,7 @@ if(!empty($_POST['productName']) && !empty($_POST['productDescription']) && !emp
 
         <!-- Form thêm sản phẩm -->
         <h1>CREATE A PRODUCT</h1>
-        <form action="createproduct.php" method="post" enctype="multipart/form-data">
+        <form action="create-product.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="productName">Product name</label>
                 <input type="text" name="productName" id="productName" class="form-control" placeholder="Product Name" aria-describedby="helpId">

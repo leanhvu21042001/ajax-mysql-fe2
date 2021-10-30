@@ -1,6 +1,6 @@
 
-const URL_API = `http://localhost/ajax_mysql_fe2/app/api`;
-const URL_PUBLIC_IMG = `http://localhost/ajax_mysql_fe2`;
+const URL_API = `http://localhost/hoc-php-ajax-mysql-front-end-2/app/api`;
+const URL_PUBLIC_IMG = `http://localhost/hoc-php-ajax-mysql-front-end-2`;
 //
 const categoriesCheckbox = document.querySelectorAll('input[name="categories"]');
 let checkedCate = [];

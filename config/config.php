@@ -1,2 +1,2 @@
 <?php
-define('BASE_URL', 'ajax_mysql_fe2');
+define('BASE_URL', 'hoc-php-ajax-mysql-front-end-2');

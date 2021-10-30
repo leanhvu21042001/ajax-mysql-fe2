@@ -35,7 +35,7 @@ if ($checkLogin == true) {
     setcookie("id", $user['id'], time() + (86400 * 30), "/");
     setcookie("name", $user['name'], time() + (86400 * 30), "/");
     setcookie("username", $user['username'], time() + (86400 * 30), "/");
-    header('location:http://localhost/ajax_mysql_fe2/index.php');
+    header('location:http://localhost/hoc-php-ajax-mysql-front-end-2/index.php');
 }
 ?>
 
