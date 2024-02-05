@@ -1,0 +1,33 @@
+version: "3.9"
+name: api-php-ajax-app
+services:
+  php-env:
+    build: .
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 9090:80
+  mysql_db:
+    image: mysql:latest
+    cap_add:
+      - SYS_NICE
+    command:
+      --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+      --default-authentication-plugin=mysql_native_password
+      --init-file /docker-entrypoint-initdb.d/init.sql #attention here
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - mysql_db:/var/lib/mysql
+      - ./database/be.sql:/docker-entrypoint-initdb.d/init.sql
+  phpmyadmin:
+    image: phpmyadmin:latest
+    restart: always
+    ports:
+      - 8082:80
+    environment:
+      - PMA_ARBITRARY=1
+volumes:
+  mysql_db:
+    driver: local

@@ -21,8 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `be1`
 --
-CREATE DATABASE IF NOT EXISTS `be1` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `be1`;
+CREATE DATABASE IF NOT EXISTS `be` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `be`;
 
 -- --------------------------------------------------------
 
